@@ -1,0 +1,27 @@
+{
+  "name": "food-ordering-app",
+  "version": "1.0.0",
+  "description": "",
+  "scripts": {
+    "start": "npx parcel index.html",
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/rupamsutar/Food-Ordering-App.git"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/rupamsutar/Food-Ordering-App/issues"
+  },
+  "homepage": "https://github.com/rupamsutar/Food-Ordering-App#readme",
+  "devDependencies": {
+    "parcel": "^2.15.4"
+  },
+  "dependencies": {
+    "react": "^19.1.1",
+    "react-dom": "^19.1.1"
+  }
+}
