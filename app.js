@@ -9,7 +9,12 @@ import logo from "/src/assets/logo.jpg";
  * -Nav item
  * Body
  * -search component
- * -Restaurant 
+ * -Restaurant Container
+ *      -Restaurant Card
+ *          -Image
+ *          -Name of Res, Star Rating, Cuisine, etc
+ *          -Cusines
+ *          -Rating
  * -
  * Footer
  * -Links
@@ -17,7 +22,6 @@ import logo from "/src/assets/logo.jpg";
  * -Contact
  */
 
-console.log(logo);
 
 const Header = () => {
     return (
@@ -37,10 +41,36 @@ const Header = () => {
     )
 }
 
+const styleCard = {
+    backgroundColor: "#f0f0f0",
+}
+
+const RestaurantCard = () => {
+    return (
+        <div className="res-card" style={styleCard}>
+            <h3>Meghana Foods</h3>
+        </div>
+    )
+}
+
+const Body = () => {
+    return (
+        <div className='body'>
+            <div className="search">
+                Search
+            </div>
+            <div className="res-container">
+                <RestaurantCard />
+            </div>
+        </div>
+    )
+}
+ 
 const AppLayout = () => {
     return (
         <div className='app'>
             <Header />
+            <Body />
         </div>
     )
 }
