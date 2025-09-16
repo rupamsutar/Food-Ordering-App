@@ -1,17 +1,49 @@
 import React from "react";
 import { createRoot } from "react-dom/client";
+import logo from "/src/assets/logo.jpg";
 
 
-const Heading = <h1>Heading of react</h1>
+/**
+ * Header
+ * -Logo
+ * -Nav item
+ * Body
+ * -search component
+ * -Restaurant 
+ * -
+ * Footer
+ * -Links
+ * -Address
+ * -Contact
+ */
 
-const NewComponent = () => {
-    return(
-    <div>
-        {Heading}
-        <h1>This is a new component</h1>
-    </div>
+console.log(logo);
+
+const Header = () => {
+    return (
+        <div className='header'>
+            <div className="logo-container">
+                <img className="logo" src="https://img.freepik.com/free-vector/food-shopping-logo-template-design_460848-10299.jpg" />
+            </div>
+            <div className="nav-items">
+                <ul>
+                    <li>Home</li>
+                    <li>About Us</li>
+                    <li>Contact Us</li>
+                    <li>Cart</li>
+                </ul>
+            </div>
+        </div>
+    )
+}
+
+const AppLayout = () => {
+    return (
+        <div className='app'>
+            <Header />
+        </div>
     )
 }
 
 const root = createRoot(document.getElementById("root"));
-root.render(<NewComponent />);
+root.render(<AppLayout />);
