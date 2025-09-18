@@ -71,3 +71,22 @@
     cursor: pointer;
     height: fit-content;
 }
+
+.filter {
+    display: flex;
+    justify-content: space-around;
+    padding: 25px 80px;
+    align-items: center;
+}
+
+.filter-btn {
+    margin: 15px 30px;
+}
+
+.search-input {
+    border-right: none;
+}
+
+.search-btn {
+    border-left: none;
+}
